@@ -11,6 +11,12 @@ const getAuthHeaders = () => {
 
 // Helper for parsing JSON responses and throwing clean error messages
 const handleResponse = async (response) => {
+  // Capture latency metric from server header if emitted
+  const latency = response.headers?.get("x-response-time");
+  if (latency && typeof window !== "undefined" && window.__API_LATENCY_LOG__) {
+    console.debug(`[Telemetry] ${response.url} - Server time: ${latency}`);
+  }
+
   let data;
   try {
     data = await response.json();
