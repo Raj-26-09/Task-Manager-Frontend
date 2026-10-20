@@ -8,28 +8,34 @@ This document provides step-by-step instructions for running the application, ve
 
 ---
 
-## 1. Summary of Build Outputs
+## 1. Summary of Documentation & Guides
 
-The build logs have been recorded in the following files:
+The build logs, engineering reports, and guides are organized in this folder:
+- **Engineering Performance Report:** [`performance-report.md`](file:///e:/AWDF/frontend/docs/practical8/performance-report.md) — 16-section technical breakdown.
+- **Syllabus & Viva Compliance Guide:** [`syllabus-compliance.md`](file:///e:/AWDF/frontend/docs/practical8/syllabus-compliance.md) — Viva questions, supplementary problems, and rubric alignment.
+- **Screenshot Capture Guide:** [`screenshot-guide.md`](file:///e:/AWDF/frontend/docs/practical8/screenshot-guide.md) — Step-by-step reproduction guide.
 - **Baseline Build Log:** [`before-build.txt`](file:///e:/AWDF/frontend/docs/practical8/before-build.txt)
 - **Optimized Build Log:** [`after-build.txt`](file:///e:/AWDF/frontend/docs/practical8/after-build.txt)
-- **Engineering Performance Report:** [`performance-report.md`](file:///e:/AWDF/frontend/docs/practical8/performance-report.md)
 
 ---
 
-## 2. Screenshot Capture Checklist
+## 2. Screenshot Capture Checklist & Evidence Index
 
-Capture the following 7 screenshots as required by the practical evaluation rubric:
+All required screenshots have been captured, labeled, and saved in [`screenshots/`](file:///e:/AWDF/frontend/docs/practical8/screenshots/):
 
 | # | Screenshot Description | Tool / Screen | Saved Screenshot File |
 |---|---|---|---|
-| **1** | Original production build output | Terminal (`npm run build`) | [`before-build.txt`](file:///e:/AWDF/frontend/docs/practical8/before-build.txt) |
-| **2** | Optimized production build output | Terminal (`npm run build`) | [`after-build.txt`](file:///e:/AWDF/frontend/docs/practical8/after-build.txt) |
-| **3** | Initial page JS requests & Auth chunk | Chrome DevTools (Network tab) | [`screenshots/01_auth_page_lazy.png`](file:///e:/AWDF/frontend/docs/practical8/screenshots/01_auth_page_lazy.png) |
-| **4** | Route Chunk 2 (TaskDashboard) on login | Chrome DevTools (Network tab) | [`screenshots/02_task_dashboard_lazy.png`](file:///e:/AWDF/frontend/docs/practical8/screenshots/02_task_dashboard_lazy.png) |
-| **5** | Task added with lazy TaskStats summary | Chrome DevTools (UI / Network) | [`screenshots/03_task_added_with_stats.png`](file:///e:/AWDF/frontend/docs/practical8/screenshots/03_task_added_with_stats.png) |
-| **6** | Suspense fallback & logout transition | Browser Viewport (Slow 3G) | [`screenshots/04_logged_out_transition.png`](file:///e:/AWDF/frontend/docs/practical8/screenshots/04_logged_out_transition.png) |
-| **7** | React DevTools Profiler results | React DevTools (Profiler tab) | Captured via React DevTools |
+| **1** | Baseline monolithic build output (205.96 kB) | Terminal (`npm run build`) | [`screenshots/01_baseline_production_build.png`](file:///e:/AWDF/frontend/docs/practical8/screenshots/01_baseline_production_build.png) |
+| **2** | Optimized 4-chunk production build output | Terminal (`npm run build`) | [`screenshots/02_optimized_production_build.png`](file:///e:/AWDF/frontend/docs/practical8/screenshots/02_optimized_production_build.png) |
+| **3** | Initial page JS requests (entry & Auth chunk only) | Chrome DevTools (Network tab) | [`screenshots/03_initial_js_requests_auth.png`](file:///e:/AWDF/frontend/docs/practical8/screenshots/03_initial_js_requests_auth.png) |
+| **4** | Dynamic Auth chunk inspection & headers | Chrome DevTools (Network tab) | [`screenshots/04_auth_chunk_inspection.png`](file:///e:/AWDF/frontend/docs/practical8/screenshots/04_auth_chunk_inspection.png) |
+| **5** | Route Chunks (TaskDashboard + TaskStats) on login | Chrome DevTools (Network tab) | [`screenshots/05_dashboard_stats_chunk_loading.png`](file:///e:/AWDF/frontend/docs/practical8/screenshots/05_dashboard_stats_chunk_loading.png) |
+| **6** | Branded Suspense fallback under Slow 3G throttling | Browser Viewport (Slow 3G) | [`screenshots/06_suspense_loading_fallback.png`](file:///e:/AWDF/frontend/docs/practical8/screenshots/06_suspense_loading_fallback.png) |
+| **7** | React DevTools Profiler component Flamegraph | React DevTools (Profiler tab) | [`screenshots/07_react_profiler_flamegraph.png`](file:///e:/AWDF/frontend/docs/practical8/screenshots/07_react_profiler_flamegraph.png) |
+| **8** | Auth Login UI state | Browser Viewport | [`screenshots/01_auth_page_lazy.png`](file:///e:/AWDF/frontend/docs/practical8/screenshots/01_auth_page_lazy.png) |
+| **9** | Task Dashboard UI state | Browser Viewport | [`screenshots/02_task_dashboard_lazy.png`](file:///e:/AWDF/frontend/docs/practical8/screenshots/02_task_dashboard_lazy.png) |
+| **10** | Task with Stats UI state | Browser Viewport | [`screenshots/03_task_added_with_stats.png`](file:///e:/AWDF/frontend/docs/practical8/screenshots/03_task_added_with_stats.png) |
+| **11** | Logged-out transition UI state | Browser Viewport | [`screenshots/04_logged_out_transition.png`](file:///e:/AWDF/frontend/docs/practical8/screenshots/04_logged_out_transition.png) |
 
 ---
 
