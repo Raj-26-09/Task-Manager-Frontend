@@ -11,6 +11,7 @@ This document provides step-by-step instructions for running the application, ve
 ## 1. Summary of Documentation & Guides
 
 The build logs, engineering reports, and guides are organized in this folder:
+- **Completed University Submission Report:** [`Practical_8_Report.docx`](file:///e:/AWDF/frontend/docs/practical8/Practical_8_Report.docx) (or [`24AIML029_AWDF_8_vertical.docx`](file:///e:/AWDF/frontend/docs/practical8/24AIML029_AWDF_8_vertical.docx)) — Complete Word submission with all 11 vertical screenshots.
 - **Engineering Performance Report:** [`performance-report.md`](file:///e:/AWDF/frontend/docs/practical8/performance-report.md) — 16-section technical breakdown.
 - **Syllabus & Viva Compliance Guide:** [`syllabus-compliance.md`](file:///e:/AWDF/frontend/docs/practical8/syllabus-compliance.md) — Viva questions, supplementary problems, and rubric alignment.
 - **Screenshot Capture Guide:** [`screenshot-guide.md`](file:///e:/AWDF/frontend/docs/practical8/screenshot-guide.md) — Step-by-step reproduction guide.
